@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERCA</title>
+    <link rel="stylesheet" href="estilos.css    ">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <header class="relative bg-[url('/images/headerImg.png')] bg-cover bg-center h-screen flex flex-col justify-center">
+        
+        <div class="absolute inset-0 bg-black/50"></div>
+        
+        <nav class="fixed top-0 z-50 w-full flex bg-[#F4F4F4]/50 flex justify-between items-center  p-4 flex-wrap backdrop-blur-xs">
+            <img class="w-20" src="images/logo.png" alt="logo">
+            
+            <div class="ml-auto lg:hidden" id="boton">
+                <img src="images/menu.png" alt="">
+            </div>
+            
+            <div class="hidden w-full block flex-grow  p-2 rounded-xl lg:flex lg:w-auto lg:ml-20" id="menu">
+                <div class="flex flex-col w-full text-right lg:flex-row lg:justify-evenly font-title">
+                    <a class="my-2 py-2 border-b-1 border-[#F9C3AA] lg:border-none lg:hover:text-[#F39A9D]" href="#sobreNosotros">Sobre nosotros</a>
+                    <a class="my-2 py-2 border-b-1 border-[#F9C3AA] lg:border-none lg:hover:text-[#54B7C8]" href="#objetivo">Objetivo</a>
+                    <a class="my-2 py-2 border-b-1 border-[#F9C3AA] lg:border-none lg:hover:text-[#F39A9D]" href="#beneficios">Beneficios</a>
+                    <a class="my-2 py-2 border-b-1 border-[#F9C3AA] lg:border-none lg:hover:text-[#54B7C8]" href="#conseguirCuidador">Conseguir cuidador</a>
+                    <a class="my-2 px-4 py-2 rounded-xl bg-[#F9C3AA] self-end  lg:hover:text-[#F39A9D]" href="">Descargar APP</a>
+                </div>
+            </div>
+            
+        </nav>
+
+        <div class="relative z-10 px-4" id="sobreNosotros">
+            <h1 class="text-[#52B5C6] font-title text-5xl ">Sobre nosotros</h1>
+            <p class="text-white text-md mt-4 lg:text-xl">Estamos para acercar a quienes necesitan ayuda con quienes pueden brindarla.<br/> En CERCA creemos que realizar las actividades cotidianas debería ser más fácil y que pedir ayuda no debería ser un obstáculo. <br/>Creamos una aplicación que conecta a personas que necesitan asistencia con cuidadores y acompañantes disponibles, teniendo en cuenta sus necesidades, ubicación y disponibilidad.</p>
+        </div>
+        
+    </header>
+
+
+    <main class="bg-[url('/images/background.png')]">
+
+        <section class="px-6 pt-10 pb-20" id="objetivo"> 
+
+            <div class="shadow-2xl rounded-3xl p-5 bg-white lg:flex lg:flex-row">
+
+                <img class="items-center w-full  rounded-xs lg:mr-10 lg:h-80" src="images/imgObjetivo.png" alt="">
+                
+                <div class="flex flex-col mt-4">
+                    <h2 class="font-title text-3xl text-[#F39A9D] lg:text-4xl ">Objetivo</h2>
+                    <p class="font-text py-2 lg:py-4 lg:text-lg">En CERCA buscamos conectar de manera simple y confiable a personas que necesitan ayuda con cuidadores y acompañantes disponibles, teniendo en cuenta sus necesidades, ubicación y disponibilidad.<br/>Queremos que cada persona pueda sentirse acompañada, segura e independiente, mientras que quienes ofrecen sus servicios encuentren nuevas oportunidades de manera organizada.Conectar, acompañar y estar cerca cuando más se necesita.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="my-5 bg-white p-10 w-fit mx-auto rounded-full shadow-2xl">
+            <h2 class=" font-title text-2xl ">BENEFICIOS</h2>
+
+        </div>
+
+
+        <section class="px-6 pt-10 pb-20" id="beneficios"> 
+
+            <div class="grid grid-cols-2 gap-5 lg:grid-cols-4  ">
+
+                <div class="shadow-2xl rounded-3xl p-5 bg-white flex flex-col justify-center items-center">
+                    <img class="" src="images/acompañamiento.png" alt="acompañamiento">
+                    <h4 class="pt-2">Acompañamiento</h4>
+                </div>
+
+                <div class="shadow-2xl rounded-3xl p-5 bg-white flex flex-col justify-center items-center">
+                    <img class="" src="images/cerca.png" alt="cerca tuyo">
+                    <h4 class="pt-2">Cerca tuyo</h4>
+                </div>
+
+                <div class="shadow-2xl rounded-3xl p-5 bg-white flex flex-col justify-center items-center">
+                    <img class="" src="images/facil.png" alt="facil de usar">
+                    <h4 class="pt-2">Facil de usar</h4>
+                </div>
+                
+                <div class="shadow-2xl rounded-3xl p-5 bg-white flex flex-col justify-center items-center">
+                    <img class="" src="images/disponibilidad.png" alt="disponibilidad">
+                    <h4 class="pt-2">Disponibilidad</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="my-5 bg-white p-10 w-fit mx-auto rounded-full shadow-2xl" id="conseguirCuidador">
+
+            <h2 class=" font-title text-2xl ">CONSEGUIR CUIDADOR</h2>
+
+        </div>
+
+        <section class="px-6 pt-10 pb-10" >
+
+            <div class="shadow-2xl rounded-3xl p-5 bg-white lg:flex lg:flex-row">
+                
+                <div class="lg:flex flex-col w-full lg:h-auto lg:w-600">
+                    
+                    <h2 class="font-title text-xl text-[#F39A9D] pb-2">Primer paso</h2>
+                    <img class="items-center w-auto rounded-xs lg:h-auto " src="images/primerPaso.png" alt="">
+                    
+                </div>
+                
+                <div class="flex flex-col mt-2 lg:ml-10 lg:mt-10 ">
+                    <p class="font-text lg:text-lg">Ingresá tus datos personales básicos para crear la cuenta y luego completá la ficha de la persona a cuidar detallando su nombre, edad, ubicación, estado de salud, medicamentos que toma, requerimientos diarios y preferencias personales, asegurando así un registro preciso para encontrar al cuidador ideal</p>
+                </div>
+            </div>
+
+            <div class="shadow-2xl rounded-3xl p-5 bg-white mt-5 lg:flex lg:flex-row-reverse">
+                
+                <div class="lg:flex flex-col w-full lg:h-auto lg:w-600 ">
+
+                    <h2 class="font-title text-xl text-[#F39A9D] pb-2 lg:text-right">Segundo paso</h2>
+                    <img class="items-center w-auto rounded-xs lg:h-auto" src="images/segundoPaso.png" alt="">
+
+                </div>
+                
+                <div class="flex flex-col mt-2 lg:mr-10 lg:mt-10  ">
+                    <p class="font-text lg:text-lg ">Una vez terminado el registro con tus datos tenes 3 tipos de servicios a elegir, mandados, cuidados personales y compañia, para saber que cuidadores estan disponibles a la hora de hacer esta tarea, dandote diferentes opciones de cuidadores para que puedas elegir a gusto</p>
+                </div>
+            </div>
+
+            <div class="shadow-2xl rounded-3xl p-5 bg-white mt-5 lg:flex lg:flex-row">
+                
+                <div class="lg:flex flex-col w-full lg:h-auto lg:w-600">
+
+                    <h2 class="font-title text-xl text-[#F39A9D] pb-2">Tercer paso</h2>
+                    <img class="items-center w-auto rounded-xs lg:h-auto" src="images/tercerPaso.png" alt="">
+                    
+                </div>
+
+                
+                <div  class="flex flex-col mt-2 lg:ml-10 lg:mt-10">
+                    <p class="font-text lg:text-lg">Teniendo las diferentes opciones que nos da el servicio seleccionado podemos entrar a ver los detalles de cada persona para saber si es una buena opcion y si nos trasmite seguridad, podemos ver valoraciones, ubicacion, detalles y tambien podemos sacar turno desde ahi. Una vez de elegir el cuidador nos da la opcion de poder hablar por mensaje para poder coordinar el servicio</p>
+                </div>
+            </div>
+
+
+            
+            <div class="shadow-2xl rounded-3xl p-5 bg-white mt-5 lg:flex lg:flex-row-reverse">
+                
+                <div class="lg:flex flex-col w-full lg:h-auto lg:w-600 ">
+                    <h2 class="font-title text-xl text-[#F39A9D] pb-2 lg:text-right">Cuarto paso</h2>
+                    <img class="items-center w-auto rounded-xs lg:h-auto" src="images/cuartoPaso.png" alt="">
+
+                </div>
+                
+                <div class="flex flex-col mt-2 lg:mr-10 lg:mt-10  ">
+                    <p class="font-text lg:text-lg ">Ya terminando el servicio en tu celular va aparecerle una notificacion ocupando toda la pantalla en donde deberan valorar y pagar a la persona para poder finalizar el servicio.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="bg-[#D9D9D9] flex justify-center py-10">
+            <a class="bg-[#54B7C8] px-7 py-2 rounded-full text-white font-title" href="">Descarga la app</a>
+        </div>
+    </main>
+
+    <footer class="bg-white flex flex-col items-center text-center">
+
+        <img class="my-20" src="images/logoGrande.png" alt="">
+
+    
+        <div class="bg-[#54B7C8] w-full py-5">
+            <h4 class="font-title text-xs text-white">© 2026 Cuidarlos. Todos los derechos reservados.</h4>
+        </div>
+    </footer>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
